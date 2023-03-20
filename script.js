@@ -1,3 +1,4 @@
+import data from 'package.json';
 $('.toggle').click(function () {
   'use strict';
   $('nav ul').slideToggle();
