@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style.scss" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -39,29 +40,39 @@
 
           <div class="row">
             <div class="col-4">
-              {% for product in $products.products %}
               <div class="static-signpost-item">
                 <div class="static-signpost-img-wrap">
                   <img
                     src="https://alvimurtaza.github.io/Interview-Front-end/l4.html"
                   />
                 </div>
-                <div class="bottom">
-                  <p class="topic">{{ product.name }}</p>
-                  <p class="date">21 Sep, 2020</p>
-                  <p class="date">Tickets Available: n/A</p>
 
-                  <a
-                    class="static-signpost-btn"
-                    href="<ip3:sublink />"
-                    target="_blank"
-                    title="Opens in a new window"
-                  >
+                <script>
+                    $(function () {
+                      var people = [];
+                      $.getJSON('my.json', function (data) {
+                        $.each(data.event, function (i, f) {
+                          var tblRow =
+                          ' <div class="bottom">' +
+                            '<p class="topic">' +
+                            f.eventName +
+                            '</p>' +
+                            '<p class="topic">' +
+                            f.eventDate +
+                            '</p>' +
+                            '<p class="topic">' +
+                            f.ticketStatus +
+                            '</p>'+
+                            '<a class="static-signpost-btn" href="#"  target="_blank" title="Opens in a new window">
                     SOLD OUT
-                  </a>
-                </div>
+                  </a>' +
+                  ' </div>';
+                          $(tblRow).appendTo('#userdata tbody');
+                        });
+                      });
+                    });
+                </script>
               </div>
-              {% endfor %}
             </div>
             <div class="col-4">
               <div class="static-signpost-item">
