@@ -10,12 +10,13 @@ $(document).ready(function () {
       $('nav ul').removeAttr('style');
     }
   });
-
-  var highestBox = 0;
-  $('.event-wrapper .event').each(function () {
-    if ($(this).height() > highestBox) {
-      highestBox = $(this).height();
-    }
-  });
-  $('.event-wrapper .event').height(highestBox);
+  setTimeout(function () {
+    var highestBox = 0;
+    $(' .event .event-topic').each(function () {
+      if ($(this).height() > highestBox) {
+        highestBox = $(this).height();
+      }
+    });
+    $('.event .event-topic').height(highestBox);
+  }, 3000);
 });

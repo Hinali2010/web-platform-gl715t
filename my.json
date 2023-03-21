@@ -17,6 +17,36 @@
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: 206",
       "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-3.png"
+    },
+    {
+      "eventName": "Perth UX Camp",
+      "eventDate": "21 Sep, 2020",
+      "ticketStatus": "Tickets Available: 47",
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-4.png"
+    },
+    {
+      "eventName": "Sofia Design",
+      "eventDate": "21 Sep, 2020",
+      "ticketStatus": "Tickets Available: 66",
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-5.png"
+    },
+    {
+      "eventName": "Design Indaba Conference",
+      "eventDate": "21 Sep, 2020",
+      "ticketStatus": "Tickets Available: 84",
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-6.png"
+    },
+    {
+      "eventName": "TYPO Berlin",
+      "eventDate": "21 Sep, 2020",
+      "ticketStatus": "Tickets Available: 4",
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-7.png"
+    },
+    {
+      "eventName": "AIGA Design Conference",
+      "eventDate": "21 Sep, 2020",
+      "ticketStatus": "Tickets Available: 16",
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-8.png"
     }
   ]
 }
