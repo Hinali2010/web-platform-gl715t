@@ -193,7 +193,7 @@ header {
     float: none;
   }
 }
-.event-btn {
+.event-btn a {
   border: 2px solid #d5d5d5;
   border-radius: 4px;
   font-family: 'Almarai';
@@ -207,13 +207,14 @@ header {
   text-decoration: none;
   cursor: unset;
   transition: all 0.7s ease-in-out;
+  display: block;
 }
-.event-btn.active {
+.event-btn a.active {
   border: 2px solid #fc732f;
   color: #fc732f;
   cursor: pointer;
 }
-.event-btn.active:hover {
+.event-btn a.active:hover {
   color: #fff;
   background-color: #fc732f;
   cursor: pointer;
