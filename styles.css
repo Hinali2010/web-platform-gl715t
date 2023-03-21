@@ -62,6 +62,8 @@ body {
   .col-s-12 {
     width: 100%;
   }
+}
+@media only screen and (max-width: 768px) {
   .event-btn a {
     padding: 20px;
   }
@@ -211,6 +213,7 @@ header {
   cursor: unset;
   transition: all 0.7s ease-in-out;
   display: block;
+  text-align: center;
 }
 .event-btn a.active {
   border: 2px solid #fc732f;
