@@ -27,10 +27,11 @@ body {
 /*   Start navigation bar   */
 
 header {
-  height: 100px;
+  height: 100%;
   background: #5c524d;
   display: flex;
   align-items: center;
+  padding: 30px 0;
 }
 .logo {
   width: auto;
@@ -94,25 +95,31 @@ header {
 @media (max-width: 1309px) {
   .icon {
     display: block;
-    width: 100%;
+    width: 50%;
     height: 80px;
-    background-color: #111;
-    border-bottom: 1px solid #444;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  .list-item {
+  .nav-item {
     width: 100%;
     margin: 0;
     padding: 0;
     position: relative;
-    top: -4px;
-    background-color: #222;
     display: none;
   }
-  .list-item li {
+  .nav-item li {
     text-align: center;
     display: block;
     border-bottom: 1px solid #333;
     float: none;
+  }
+  .logo {
+    width: 50%;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
   }
 }
 .event-btn a {
@@ -243,13 +250,15 @@ header {
   .event-btn a {
     padding: 20px;
   }
+  .nav-item {
+    display: none;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .event-topic {
     height: auto;
   }
 }
-
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .col-1 {
