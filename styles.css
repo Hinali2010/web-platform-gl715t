@@ -109,9 +109,8 @@ header {
 .toggle {
   float: right;
   margin: 20px;
-  color: #eee;
+  color: #fff;
   font-size: 30px;
-  border: 1px solid #eee;
   padding: 0px 5px;
   border-radius: 4px;
   cursor: pointer;
@@ -286,6 +285,14 @@ header {
 @media screen and (max-width: 767px) {
   .event-topic {
     height: auto;
+  }
+  .hide-xs {
+    display: none;
+  }
+  .event {
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #d5d5d5;
   }
 }
 @media only screen and (min-width: 768px) {
