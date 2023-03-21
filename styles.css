@@ -1,33 +1,3 @@
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
-  margin: 24px 0;
-  background: #e5e5e5;
-}
-
-.searchTerm {
-  width: 100%;
-  padding: 15px;
-  background: #ffffff;
-  border: 1px solid #d5d5d5;
-  height: 50px;
-  outline: none;
-  color: #757575;
-  background-image: url(https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/search.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.searchTerm:focus {
-  color: #000;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap {
-  background: #e5e5e5;
-  height: 98px;
-}
 * {
   box-sizing: border-box;
 }
@@ -66,6 +36,11 @@ header {
 }
 .logo img {
   height: 55px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .nav-item {
   float: right;
@@ -117,7 +92,34 @@ header {
 }
 
 /*   End nav bar for small screens   */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin: 24px 0;
+  background: #e5e5e5;
+}
 
+.searchTerm {
+  width: 100%;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #d5d5d5;
+  height: 50px;
+  outline: none;
+  color: #757575;
+  background-image: url(https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/search.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.searchTerm:focus {
+  color: #000;
+}
+.wrap {
+  background: #e5e5e5;
+  height: 98px;
+}
 /*   Start media query   */
 
 @media (max-width: 1309px) {
@@ -288,11 +290,6 @@ header {
   }
   .hide-xs {
     display: none;
-  }
-  header {
-    height: 64px;
-    display: flex;
-    align-items: center;
   }
   .event {
     box-shadow: none;
