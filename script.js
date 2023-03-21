@@ -18,5 +18,11 @@ $(document).ready(function () {
       }
     });
     $('.event .event-topic').height(highestBox);
+    $('.searchTerm').on('keyup', function () {
+      var value = $(this).val().toLowerCase();
+      $('.event').filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+      });
+    });
   }, 3000);
 });
