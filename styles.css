@@ -57,11 +57,8 @@ body {
 /*   Start navigation bar   */
 
 header {
-  height: 100%;
   background: #5c524d;
   display: flex;
-  align-items: center;
-  padding: 30px 0;
 }
 .logo {
   width: auto;
@@ -73,10 +70,12 @@ header {
 .nav-item {
   float: right;
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .nav-item li {
   float: left;
-  padding: 0 20px;
+  padding: 30px 20px;
   border-radius: 3px;
   transition: all 0.7s ease-in-out;
   position: relative;
@@ -90,7 +89,7 @@ header {
   position: relative;
 }
 .nav-item li:hover::after,
-.nav-item li.active a::after {
+.nav-item li.active::after {
   content: '';
   position: absolute;
   width: 100%;

@@ -4,49 +4,57 @@
       "eventName": "Understanding color theory: the color wheel and findi...",
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: n/A",
-      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-1.png"
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-1.png",
+      "ticketBook": "SOLD OUT"
     },
     {
       "eventName": "RGD Design Thinkers",
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: 11",
-      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-2.png"
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-2.png",
+      "ticketBook": "Book Event"
     },
     {
       "eventName": "What Design Can Do",
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: 206",
-      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-3.png"
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-3.png",
+      "ticketBook": "Book Event"
     },
     {
       "eventName": "Perth UX Camp",
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: 47",
-      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-4.png"
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-4.png",
+      "ticketBook": "Book Event"
     },
     {
       "eventName": "Sofia Design",
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: 66",
-      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-5.png"
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-5.png",
+      "ticketBook": "Book Event"
     },
     {
       "eventName": "Design Indaba Conference",
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: 84",
-      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-6.png"
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-6.png",
+      "ticketBook": "Book Event"
     },
     {
       "eventName": "TYPO Berlin",
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: 4",
-      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-7.png"
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-7.png",
+      "ticketBook": "Book Event"
     },
     {
       "eventName": "AIGA Design Conference",
       "eventDate": "21 Sep, 2020",
       "ticketStatus": "Tickets Available: 16",
-      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-8.png"
+      "eventImg": "https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/event-8.png",
+      "ticketBook": "Book Event"
     }
   ]
 }
