@@ -12,7 +12,7 @@ body {
 }
 [class*='col-'] {
   float: left;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 /* For mobile phones: */
@@ -100,39 +100,40 @@ body {
 }
 /*   Start navigation bar   */
 
-nav {
+header {
   height: 100px;
   background: #5c524d;
+  display: flex;
+  align-items: center;
 }
 .logo {
-  padding: 10px;
   width: auto;
   float: left;
 }
 .logo img {
   height: 55px;
 }
-.list-item {
+.nav-item {
   float: right;
   list-style: none;
 }
-.list-item li {
+.nav-item li {
   float: left;
   padding: 0 20px;
-
   border-radius: 3px;
   transition: all 0.7s ease-in-out;
   position: relative;
 }
-.list-item li a {
+.nav-item li a {
   color: #eee;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  position: relative;
 }
-.list-item li:hover::after,
-.list-item li.active a::after {
+.nav-item li:hover::after,
+.nav-item li.active a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -188,7 +189,7 @@ nav {
     float: none;
   }
 }
-.static-signpost-btn {
+.event-btn {
   border: 2px solid #d5d5d5;
   border-radius: 4px;
   font-family: 'Almarai';
@@ -203,26 +204,66 @@ nav {
   cursor: unset;
   transition: all 0.7s ease-in-out;
 }
-.static-signpost-btn.active {
+.event-btn.active {
   border: 2px solid #fc732f;
   color: #fc732f;
   cursor: pointer;
 }
-.static-signpost-btn.active:hover {
+.event-btn.active:hover {
   color: #fff;
   background-color: #fc732f;
   cursor: pointer;
 }
-.static-signpost-img-wrap {
+.event-img {
   min-height: 171px;
   height: 100%;
   width: 100%;
   border-radius: 4px 4px 0px 0px;
 }
-.static-signpost-item {
+.event-img img {
+  width: 100%;
+  height: 100%;
+}
+.event {
   background: #ffffff;
   border: 1px solid #d5d5d5;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+.event-desc {
+  padding: 24px;
+  justify-content: space-between;
+}
+.event-topic {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #212121;
+  display: flex;
+  margin-bottom: 24px;
+}
+.event-date {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #212121;
+  display: inline-flex;
+}
+.event-status {
+  font-family: 'Almarai';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #212121;
+  display: inline-flex;
+  float: right;
 }
 /*   End media query   */

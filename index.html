@@ -17,18 +17,23 @@
         $.getJSON('my.json', function (data) {
           $.each(data.event, function (i, f) {
             var tblRow =
-              '<div class="col-4"> <div class="static-signpost-item"> <div class="bottom">' +
-              '<p class="topic">' +
+              '<div class="col-4"> <div class="event">' +
+                '<div class="event-img">' +
+              '<img src='+f.eventImg+'>' +
+              '</div>' +
+              '<div class="event-desc">' +
+               '<span class="event-topic">' +
               f.eventName +
-              '</p>' +
-              '<p class="topic">' +
+              '</span>' +
+              '<span class="event-date">' +
               f.eventDate +
-              '</p>' +
-              '<p class="topic">' +
+              '</span>' +
+              '<span class="event-status">' +
               f.ticketStatus +
-              '</p>' +
-              '<a class="static-signpost-btn" href="#"  target="_blank" title="Opens in a new window">  "SOLD OUT" </a>' +
-              ' </div></div></div>';
+              '</span>' +
+              '<div class="event-btn">' +
+              '<a class="" href="#"  target="_blank" title="Opens in a new window">  "SOLD OUT" </a>' +
+              ' </div></div></div></div>';
             $(tblRow).appendTo('.event-data .row');
           });
         });
@@ -41,13 +46,13 @@
         <nav>
           <div class="logo">
             <img
-              src="https://alvimurtaza.github.io/Interview-Front-end/l4.html"
+              src="https://alvimurtaza.github.io/Interview-Front-end/images/l3-l4-engineer/logo.png"
             />
           </div>
           <div class="icon">
             <span class="toggle">☰</span>
           </div>
-          <ul class="list-item">
+          <ul class="nav-item">
             <li><a href="#">Dashboard</a></li>
             <li class="active"><a href="#">Events</a></li>
             <li><a href="#">Help</a></li>
@@ -57,9 +62,9 @@
       </div>
     </header>
     <main>
-      <div class="static-signpost-wrapper float100">
+      <div class="event-wrapper float100">
         <div class="container-fluid">
-          <h2 class="title">Events</h2>
+          <h2 class="event-title">Events</h2>
             <div class="event-data">
               <div class="row"></div>
             </div>
