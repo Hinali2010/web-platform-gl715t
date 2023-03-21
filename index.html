@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="style.scss" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
+     <script>
       $(function () {
         var people = [];
         $.getJSON('my.json', function (data) {
@@ -25,12 +25,14 @@
                '<span class="event-topic">' +
               f.eventName +
               '</span>' +
+              '<div class="event-date-status-wrap">' +
               '<span class="event-date">' +
               f.eventDate +
               '</span>' +
               '<span class="event-status">' +
               f.ticketStatus +
               '</span>' +
+              '</div>' +
               '<div class="event-btn">' +
               '<a class="" href="#"  target="_blank" title="Opens in a new window">  "SOLD OUT" </a>' +
               ' </div></div></div></div>';
@@ -63,16 +65,18 @@
     </header>
     <main>
       <div class="event-wrapper float100">
-        <div class="container-fluid">
+        <div class="col-12">
+          <div class="row">
           <h2 class="event-title">Events</h2>
             <div class="event-data">
               <div class="row"></div>
             </div>
           </div>
+          </div>
         </div>
       </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

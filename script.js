@@ -10,3 +10,12 @@ $(window).resize(function () {
     $('nav ul').removeAttr('style');
   }
 });
+$(document).ready(function () {
+  var highestBox = 0;
+  $('.event').each(function () {
+    if ($(this).height() > highestBox) {
+      highestBox = $(this).height();
+    }
+  });
+  $('.event').height(highestBox);
+});
