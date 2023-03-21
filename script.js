@@ -12,10 +12,10 @@ $(document).ready(function () {
   });
 
   var highestBox = 0;
-  $('.event-data .event').each(function () {
+  $('.event-wrapper .event').each(function () {
     if ($(this).height() > highestBox) {
       highestBox = $(this).height();
     }
   });
-  $('.event-data .event').height(highestBox);
+  $('.event-wrapper .event').height(highestBox);
 });
