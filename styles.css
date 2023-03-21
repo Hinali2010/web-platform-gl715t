@@ -289,6 +289,11 @@ header {
   .hide-xs {
     display: none;
   }
+  header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
   .event {
     box-shadow: none;
     border: 0;
